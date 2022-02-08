@@ -1,0 +1,53 @@
+<div class="section-full p-t80 p-b80 bg-white inner-page-padding">
+    <div class="container">
+        <!-- TITLE START -->
+        <div *ngIf="title == '1'" class="section-head no-margin ">
+            <div class="mt-separator-outer separator-left">
+                <div class="mt-separator">
+                    <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Nuestra</span> Empresa</h2>
+                </div>
+            </div>
+        </div>           
+        
+        <!-- TITLE END -->  
+        <div class="section-content ">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="m-about ">
+                        <div class="owl-carousal about-us-carousal">
+                            <!-- COLUMNS 1 -->
+                            <div class="item" *ngFor="let object of data.slides">
+                                <div class="ow-img">
+                                    <a routerLink="/nosotros"><img
+                                            src="{{object.image}}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="m-about-containt text-black">
+                        <div class="m-about-years bg-moving"
+                            style="background-image:url(assets/images/background/line.png);">
+                            <span class="text-primary large-title">{{data.experience}}</span>
+                            <span class="large-title-info">Años de experiencia</span>
+                        </div>
+                        <h3 class="font-weight-600">Quienes somos</h3>
+                        <p>Una industria textil dedicada a la tintorería y acabado de telas.
+                            Contamos con tecnología vanguardista y personal de alto grado de capacitación,
+                            enfocándonos en brindar la más alta calidad global e integral en nuestros servicios.</p>
+                        <div class="author-info p-t20">
+
+                            <a routerLink="/contacto" class="site-button btn-effect m-b15"><span>Ponerse en contacto</span></a>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

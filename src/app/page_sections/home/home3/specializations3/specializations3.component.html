@@ -1,0 +1,36 @@
+<div class="section-full p-t80 p-b50  mobile-page-padding our-product3-wrap" style="background-image:url(assets/images/background/bg-5.png);">
+    <div class="container">
+        <!-- IMAGE Carousal START -->
+        <div class="section-content">
+
+            <!-- <div class="section-head m-b50 text-white text-center">
+                <h3 class="m-t0">Servicio de Teñido</h3>
+                <p>Textil la Meced</p>
+            </div> -->
+
+            <div class="section-head"> 
+                <div class="mt-separator-outer separator-center">
+                    <div class="mt-separator">
+                        <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Servicio </span> Teñido</h2>
+                    </div>
+                </div>
+            </div>    
+
+
+            <div class="row">
+                <div *ngFor="let object of data; let i = index;" class="col-md-4 col-sm-{{ i == 2 ? 12 : 6}} m-b30">
+
+                    <app-grid-box2 [data]="object"></app-grid-box2>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+<div class="page-wraper">  
+    <app-header1></app-header1>
+    <div class="page-content">
+        <app-banner1 [data]="banner"></app-banner1>
+
+        <!-- <app-home-services [data]="home"></app-home-services> -->
+        <div class="container">
+            <br>
+            <div class="section-head">
+                <div class="mt-separator-outer separator-center">
+                    <h3 style="text-align: center; font-size: 20px;">TRABAJAMOS EN</h3>
+                    <div class="mt-separator">
+                        <h2 class="text-uppercase sep-line-one "><span
+                                class="font-weight-300 text-primary">Potenciar</span> tu marca</h2>
+                    </div>
+                    <span class="arrowdown"></span>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6" *ngFor="let data of home">
+                        <!-- <app-grid-box2 [data]="object"></app-grid-box2> -->
+                        <a href="#{{data.seccion}}">
+                            <div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white"  >
+                                <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                    <span class="icon-cell">
+                                        <img src="{{data.image}}" width="70px" style="cursor: pointer;">
+                                    </span>
+                                </div>
+                                <div class="icon-content" style="padding-top: 10px;">
+                                    <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">{{data.title}}</h4> 
+                                        <p>{{data.subtitle}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="section-full p-tb80 inner-page-padding">
+            <div class="container">
+            
+
+                
+                <div class="section-content">
+                    <div class="row">
+                        
+                        <!-- Sección 1 -->
+                        <section id="seccion-1" >
+                            <h1>Termofijado</h1>
+                          <button class="site-button btn-effect " (click)="save()" > Navegar </button> 
+                        </section>
+
+                        <!-- Sección 2 -->
+                        <section id="seccion-2">
+                            <h1>Tintoreria</h1>
+                          <button class="site-button btn-effect " (click)="save()" > Navegar </button> 
+                        </section>
+
+                        <!-- Sección 3 -->
+                        <section id="seccion-3">
+                            <h1>Acabados</h1>
+                          <button class="site-button btn-effect " (click)="save()" > Navegar </button> 
+                        </section>
+
+                        <!-- Sección 3 -->
+                        <section id="seccion-4">
+                            <h1>Telas</h1>
+                          <button class="site-button btn-effect " (click)="save()" > Navegar </button> 
+
+                        </section>
+
+                    </div>
+                </div>  
+            </div>
+       </div>
+    </div>
+    <app-footer1></app-footer1>
+</div>
+<app-loader></app-loader>
+
+
+<script>
+    $(document).ready(function(){
+
+$('.ir-arriba').click(function(){
+    $('body, html').animate({
+        scrollTop: '0px'
+    }, 300);
+});
+
+$(window).scroll(function(){
+    if( $(this).scrollTop() > 0 ){
+        $('.ir-arriba').slideDown(300);
+    } else {
+        $('.ir-arriba').slideUp(300);
+    }
+});
+
+});
+</script>

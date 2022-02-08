@@ -1,0 +1,121 @@
+<div class="section-full mobile-page-padding p-t80 p-b50 bg-white our-valu-wrap">
+    <div class="container">
+
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <!-- TITLE START -->
+                    <div class="section-head">
+                        <div class="mt-separator-outer separator-left">
+                            <div class="mt-separator">
+                                <h2 class="text-uppercase sep-line-one "><span
+                                        class="font-weight-300 text-primary">Valores</span> TLM</h2>
+                            </div>
+
+                            <br>
+                            <div class="icon-md inline-icon m-b15 text-primary scale-in-center" style="margin-left: 40%;">
+                                <span class="icon-cell">
+                                    <img src="assets/images/icon/diamante.png" width="70px" style="cursor: pointer;">
+                                </span>
+                            </div>
+
+                            
+                            <div *ngFor="let object of data.exData">
+                                <!-- <span class="progressText text-black"><B>{{object.title}}</B></span> -->
+
+                                <ol class="list-num-count">
+                                    <li>{{object.title}}</li>
+                                </ol>
+
+                                <!-- <div class="progress mt-probar-1  m-b30 m-t10">
+                                    <div class="progress-bar bg-primary " role="progressbar" attr.aria-valuenow="{{object.percent}}"
+                                        aria-valuemin="0" aria-valuemax="100"> 
+                                       <span class="popOver" data-toggle="tooltips" data-placement="top"
+                                            title="{{object.percent}}%"></span>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <!-- TITLE END -->
+                    
+
+                </div>
+                <div class="col-md-3 col-sm-6" routerLink="/servicios2022">
+
+                    <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20"
+                        *ngFor="let object of data.facts">
+                        <div class="counter font-30 font-weight-800 m-b15 text-primary">{{object.figure}}</div>
+                        <h4 class="m-tb0">{{object.title}}</h4>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="p-b0">
+                        <div class="mt-box">
+                            <h3 class="m-t0"><span class="font-weight-100"> <b> ETICA </b>  </span><span class="text-primary">
+                                   INDUSTRIAL </span> </h3>
+                        </div>
+
+                        <br>
+                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center" style="margin-left: 30%;">
+                            <span class="icon-cell">
+                                <img src="assets/images/icon/planta.png" width="70px" style="cursor: pointer;">
+                            </span>
+                        </div>
+
+                            
+                            <div *ngFor="let object of data.exDataEtica">
+                                <!-- <span class="progressText text-black"><B>{{object.title}}</B></span> -->
+
+                                <ol class="list-num-count">
+                                    <li>{{object.title}}</li>
+                                </ol>
+
+                            </div>
+
+
+                            <!-- <p>Contamos con tecnología vanguardista y personal de alto grado de capacitación,
+                                enfocándonos en brindar la más alta calidad global e integral en nuestros servicios.</p> -->
+
+                            
+                    <!-- <div class="video-section-full bg-no-repeat bg-cover overlay-wraper"
+                    style="background-image:url(assets/images/video-bg.jpg)">
+                    <div class="overlay-main bg-black opacity-07"></div>
+                    <div class="video-section-inner">
+                        <div class="video-section-content">
+                            <div class="video-section-left">
+                                <a href="{{data.video}}" class="mfp-video play-now">
+                                    <i class="icon fa fa-play"></i>
+                                    <span class="ripple"></span>
+                                </a>
+                            </div>
+                            <div class="video-section-right">
+                                <a href="{{data.video}}" class="mfp-video font-weight-550 text-uppercase">Video
+                                    Testimonio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="author-info">
+
+                    <div class="author-signature">
+                        <img src="{{data.author.sign}}" alt="Signature" width="90">
+                    </div>
+                    <div class="author-name">
+                        <h4 class="m-t0">{{data.author.name}}</h4>
+                        <p>{{data.author.designation}}</p>
+                    </div>
+                </div> -->
+
+                        
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

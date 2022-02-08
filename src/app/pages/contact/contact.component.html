@@ -1,0 +1,156 @@
+<div class="page-wraper">  
+    <app-header1></app-header1>
+    
+    <div class="page-content">
+    
+        <app-banner1 [data]="banner"></app-banner1>
+         
+        <div class="section-full p-tb80 inner-page-padding">
+            <div class="container">
+            
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6">
+                            <form class="contact-form cons-contact-form" method="post" action="form-handler.php">
+                                <div class="contact-one m-b30">
+                                
+                                <div class="section-head">
+                                    <div class="mt-separator-outer separator-left">
+                                        <div class="mt-separator">
+                                            <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Cotizar </span> servicio</h2>
+                                        </div>
+                                    </div>
+                                </div>                
+                                
+                                
+                                <div class="row" style="padding-bottom: 20px;">
+                                    <div class="col-md-6 col-sm-6">
+                                        <input name="username" type="text" required class="form-control" placeholder="Nombres ó Razon Social">
+                                    </div>
+                               
+                                    <div class="col-md-6 col-sm-6">
+                                        <input name="email" type="text" class="form-control" required placeholder="Correo electronico">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row" style="padding-bottom: 20px;">
+                                    <div class="col-md-6 col-sm-6">
+                                        <select name="tipodoc"  class="form-control" required>
+                                            <option value="">SELECCIONE EL TIPO DE DOCUMENTO</option>
+                                            <option value="DNI">DNI</option>
+                                            <option value="RUC">RUC</option>
+                                            <option value="PPT">PPT</option>
+                                        </select>
+                                    </div>
+                               
+                                    <div class="col-md-6 col-sm-6">
+                                        <input name="email" type="text" class="form-control" required placeholder="Ingrese n° de documento">
+                                    </div>
+                                </div>
+                                                                    
+                                    
+                               
+                                <div class="row" style="padding-bottom: 20px;">
+                                    <div class="col-md-6 col-sm-6">
+                                        <input name="username" type="text" required class="form-control" placeholder="Telefono">
+                                    </div>
+                               
+                                    <div class="col-md-6 col-sm-6">
+                                        <input name="email" type="text" class="form-control" required placeholder="Telefono 2 (Opcional)">
+                                    </div>
+                                </div>
+
+                                    <div class="form-group">
+                                        <select name="email"  class="form-control" required placeholder="Correo electronico">
+                                            <option value="">SELECCIONE EL TIPO DE SERVICIO</option>
+                                            <option value="teñido 1">TEÑIDO REACTIVO</option>
+                                            <option value="seco 2">TEÑIDO DISPERSO</option>
+                                            <option value="teñido 3">ACABADO REACTIVO</option>
+                                            <option value="teñido 3">ACABADO DISPERSO</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <textarea name="message" rows="4" class="form-control " required placeholder="Escriba un mensaje"></textarea>
+                                    </div>
+                                
+                                    <div class="text-right">
+                                        <button name="submit" type="submit" value="Submit" class="site-button btn-effect">Cotizar
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>                        
+                        <div class="col-md-4 col-sm-6">
+
+                            
+
+
+                            <div class="contact-info m-b30">
+                                <div class="section-head">
+                                    <div class="mt-separator-outer separator-left">
+                                        <div class="mt-separator">
+                                            <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">información</span></h2>
+                                        </div>
+                                    </div>
+                                </div>                   
+                                <div class="bg-dark p-a20 text-white">   
+                                    <div class="mt-icon-box-wraper left">
+                                        <div style="text-align: center;">
+                                            <img src="assets/images/app_web.png" width="100%">
+                                        </div>
+                                    </div>                            
+                                    <!-- <div class="mt-icon-box-wraper left p-b40">
+                                        <div class="icon-xs"><i class="fa fa-phone"></i></div>
+                                        <div class="icon-content">
+                                            <h5 class="m-t0 font-weight-500">Numero telefonico</h5>
+                                            <p>+01 348 7257</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-icon-box-wraper left p-b40">
+                                        <div class="icon-xs"><i class="fa fa-envelope"></i></div>
+                                        <div class="icon-content">
+                                            <h5 class="m-t0 font-weight-500">Correo electronico</h5>
+                                            <p>contacto@texlamerced.com</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-icon-box-wraper left">
+                                        <div class="icon-xs"><i class="fa fa-map-marker"></i></div>
+                                        <div class="icon-content">
+                                            <h5 class="m-t0 font-weight-500">Dirección</h5>
+                                            <p>Calle 2 Mz C Lt. 11 y 12 - Urb. La Merced, Ate - Lima - Perú</p>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="mt-icon-box-wraper left">
+                                        <div style="text-align: center;">
+                                            <br>
+                                            <p>Descargar APP TLM Cliente </p>
+                                            <a target="_blank" href="https://play.google.com/store/apps/details?id=tlm.app.pe">
+                                                <img src="assets/images/descargar.png" width="200px">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                
+                <!-- <div class="gmap-outline">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1950.9108905463593!2d-76.95354586375427!3d-12.055780180898825!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbac471de1b1f1ce5!2sTextil+La+Merced+SAC!5e0!3m2!1ses-419!2spe!4v1560889165736!5m2!1ses-419!2spe" width="1150" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>                     -->
+            </div>
+       </div>
+     
+        
+    </div>
+    <app-footer1></app-footer1>
+</div>
+<app-loader></app-loader>

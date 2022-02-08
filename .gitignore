@@ -1,0 +1,4 @@
+.tmp
+*-lock.json
+*.swp
+node_modules

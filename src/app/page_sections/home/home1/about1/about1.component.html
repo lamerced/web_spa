@@ -1,0 +1,41 @@
+<div class="section-full mobile-page-padding p-t80 p-b30 bg-dark bg-repeat square_shape2 bg-moving" style="background-image:url(assets/images/background/bg-6.png)">
+    <div class="container">
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="mt-separator-outer separator-center">
+                <div class="mt-separator">
+                    <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Nuestra</span> Empresa</h2>
+                </div>
+            </div>
+        </div>                   
+        <!-- TITLE END --> 
+
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                           <div class="owl-carousal about-home owl-btn-vertical-center">
+                            <!-- COLUMNS 1 --> 
+                            <div class="item" *ngFor="let object of data">
+                                <div class="mt-img-effect zoom-slow">
+                                    <a routerLink="/about"><img src="{{object.image}}" alt=""></a>
+                               </div>
+                            </div>                                                                                                                                                              
+                       </div>
+                       </div>
+                    
+                    <div class="col-md-3 col-sm-12">
+                        <div class="about-home-right bg-white p-a30">
+                            <h3 class="m-t0"><span class="font-weight-100">TEXTIL</span> la Merced</h3>
+                            <p>Nos caracterizamos por brindar un servicio de calidad y tiempo acordado con todos nuestros clientes, promoviendo un modelo empresarial que busca anticipar y gestionar de forma responsable tanto los riesgos laborales y desafíos derivados del desarrollo sostenible. </p>
+                            <div class="text-right">
+                                <a routerLink="/about" class="site-button-link" data-hover="Read More">Leer Mas <i class="fa fa-angle-right arrow-animation"></i></a>
+                            </div>                                                    
+                        </div>
+                    </div>
+                </div>
+           </div>
+     </div>
+    <div class="hilite-title text-left p-l50 text-uppercase hilite-dark">
+        <strong>Nosotros</strong>
+    </div>                
+</div>

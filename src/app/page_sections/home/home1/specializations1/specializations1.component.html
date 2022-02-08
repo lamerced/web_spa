@@ -1,0 +1,28 @@
+<div class="section-full our-about-home-wrap mobile-page-padding bg-white  p-t80 p-b30 bg-repeat square_shape1"
+            style="background-image:url(assets/images/background/bg-5.png);">
+            <div class="container">
+                <!-- IMAGE Carousal START -->
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 m-b30" *ngFor="let object of data">
+                            <app-grid-box1 [data]="object" zoom="0"></app-grid-box1>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 col-sm-6 m-b30">
+
+                            <div class="mt-box our-speciallization-content">
+                                <h3 class="m-t0"><span class="font-weight-100">Contamos</span> <br>con alta tecnología</h3>
+                                <p>en nuestra maquinaria, el mejor equipo listo para atender sus exigencias y nos enfocamos en brindar
+                                    la mas alta calidad global e integral en nuestros servicios.
+                                </p>
+                                <a routerLink="/conocenos" class="site-button btn-effect">Saber mas</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hilite-title text-right p-r50 text-uppercase text-pop-up-top">
+                <strong>Bienvenido</strong>
+            </div>
+        </div>
